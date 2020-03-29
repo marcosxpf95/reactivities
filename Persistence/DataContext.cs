@@ -10,6 +10,7 @@ namespace Persistence
         {
         }
         public DbSet<Value> MyProperty { get; set; }
+        public DbSet <Activity> Activities { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Value>()
